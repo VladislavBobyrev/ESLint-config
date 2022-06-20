@@ -20,7 +20,7 @@ module.exports = {
       allowSingleLine: true,
     }],
     'block-spacing': ['error', 'never'],
-    'object-curly-spacing': ['error', 'never'],
+    'object-curly-spacing': ['error', 'always'],
     'no-multiple-empty-lines': ['error', {
       max: 3,
     }],
@@ -48,5 +48,7 @@ module.exports = {
     'no-lonely-if': 'off',
     'no-continue': 'off',
     'guard-for-in': 'off',
+    'linebreak-style': ['error', 'windows'],
+    semi: ['error', 'never'],
   },
-};
+}
