@@ -1,3 +1,9 @@
+/**
+  npm i -D eslint eslint-plugin-import eslint-plugin-vue eslint-config-airbnb-typescript
+  eslint-plugin-vuejs-accessibility @vue/eslint-config-typescript @vue/eslint-config-airbnb
+  @typescript-eslint/parser @typescript-eslint/eslint-plugin
+  */
+
 module.exports = {
   root: true,
   env: {
@@ -9,46 +15,12 @@ module.exports = {
     '@vue/typescript/recommended',
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-unused-vars': 'off',
-    'eol-last': ['error', 'never'],
-    'spaced-comment': 'off',
-    'func-names': 'off',
-    'no-alert': 'warn',
     'brace-style': ['error', 'allman', {
       allowSingleLine: true,
     }],
-    'block-spacing': ['error', 'never'],
-    'object-curly-spacing': ['error', 'always'],
-    'no-multiple-empty-lines': ['error', {
-      max: 3,
-    }],
-    'operator-linebreak': ['error', 'after'],
-    'no-empty': 'off',
-    'max-classes-per-file': 'off',
-    'max-len': 'off',
-    'class-methods-use-this': 'off',
-    'no-restricted-globals': 'off',
-    'no-param-reassign': 'off',
-    'no-use-before-define': 'off',
-    'no-shadow': 'off',
-    'no-loop-func': 'off',
-    'no-await-in-loop': 'off',
-    'no-plusplus': 'off',
-    'no-restricted-syntax': 'off',
-    'no-return-assign': 'off',
-    'default-case': 'off',
-    'no-return-await': 'off',
-    'consistent-return': 'off',
-    'no-nested-ternary': 'off',
-    'no-underscore-dangle': 'off',
-    'no-empty-function': 'off',
-    'no-mixed-operators': 'off',
-    'no-lonely-if': 'off',
-    'no-continue': 'off',
-    'guard-for-in': 'off',
-    'linebreak-style': ['error', 'windows'],
-    semi: ['error', 'never'],
+    'linebreak-style': ['error', 'unix'],
+    'import/extensions': 0,
+    'import/no-unresolved': 0,
   },
-}
+};
